@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD3D7AAED403CF12F804CBAC /* Pods_MonocarTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65BAE3260EBE12A3C0FAF6A /* Pods_MonocarTestTask.framework */; };
+		CE26901324DB0C8900078BD3 /* GoogleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26901224DB0C8900078BD3 /* GoogleRoute.swift */; };
+		CE26901724DB259500078BD3 /* DriverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26901524DB259500078BD3 /* DriverCollectionViewCell.swift */; };
+		CE26901824DB259500078BD3 /* DriverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE26901624DB259500078BD3 /* DriverCollectionViewCell.xib */; };
+		CE26901A24DC38EA00078BD3 /* MapViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26901924DC38EA00078BD3 /* MapViewInfo.swift */; };
+		CE26901C24DC49C200078BD3 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26901B24DC49C200078BD3 /* Constans.swift */; };
+		CEA7CF6424DAE3FE00F6790D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF6324DAE3FE00F6790D /* AppDelegate.swift */; };
+		CEA7CF6624DAE3FE00F6790D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF6524DAE3FE00F6790D /* SceneDelegate.swift */; };
+		CEA7CF6824DAE3FE00F6790D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF6724DAE3FE00F6790D /* MapViewController.swift */; };
+		CEA7CF6B24DAE3FE00F6790D /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA7CF6924DAE3FE00F6790D /* Map.storyboard */; };
+		CEA7CF6D24DAE40000F6790D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA7CF6C24DAE40000F6790D /* Assets.xcassets */; };
+		CEA7CF7024DAE40000F6790D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA7CF6E24DAE40000F6790D /* LaunchScreen.storyboard */; };
+		CEA7CF7B24DAE40000F6790D /* MonocarTestTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF7A24DAE40000F6790D /* MonocarTestTaskTests.swift */; };
+		CEA7CF8624DAE40000F6790D /* MonocarTestTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF8524DAE40000F6790D /* MonocarTestTaskUITests.swift */; };
+		CEA7CF9A24DAE94600F6790D /* RequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF9924DAE94600F6790D /* RequestProvider.swift */; };
+		CEA7CF9D24DAEA4A00F6790D /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF9C24DAEA4A00F6790D /* Codable.swift */; };
+		CEA7CF9F24DAEAB400F6790D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF9E24DAEAB400F6790D /* DIContainer.swift */; };
+		CEA7CFA124DAEAEA00F6790D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CFA024DAEAEA00F6790D /* RequestManager.swift */; };
+		CEA7CFA324DAEC4E00F6790D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CFA224DAEC4E00F6790D /* AppError.swift */; };
+		CEA7CFA524DAEDE900F6790D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CFA424DAEDE900F6790D /* Route.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA7CF7724DAE40000F6790D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA7CF5824DAE3FE00F6790D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA7CF5F24DAE3FE00F6790D;
+			remoteInfo = MonocarTestTask;
+		};
+		CEA7CF8224DAE40000F6790D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA7CF5824DAE3FE00F6790D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA7CF5F24DAE3FE00F6790D;
+			remoteInfo = MonocarTestTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BF98A6258E348305D2DB879 /* Pods-MonocarTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonocarTestTask.debug.xcconfig"; path = "Target Support Files/Pods-MonocarTestTask/Pods-MonocarTestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		ADA5A8416439D8C55127A86E /* Pods-MonocarTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonocarTestTask.release.xcconfig"; path = "Target Support Files/Pods-MonocarTestTask/Pods-MonocarTestTask.release.xcconfig"; sourceTree = "<group>"; };
+		CE26901224DB0C8900078BD3 /* GoogleRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleRoute.swift; sourceTree = "<group>"; };
+		CE26901524DB259500078BD3 /* DriverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE26901624DB259500078BD3 /* DriverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE26901924DC38EA00078BD3 /* MapViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewInfo.swift; sourceTree = "<group>"; };
+		CE26901B24DC49C200078BD3 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		CEA7CF6024DAE3FE00F6790D /* MonocarTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonocarTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7CF6324DAE3FE00F6790D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA7CF6524DAE3FE00F6790D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEA7CF6724DAE3FE00F6790D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CEA7CF6A24DAE3FE00F6790D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Map.storyboard; sourceTree = "<group>"; };
+		CEA7CF6C24DAE40000F6790D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA7CF6F24DAE40000F6790D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA7CF7124DAE40000F6790D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA7CF7624DAE40000F6790D /* MonocarTestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonocarTestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7CF7A24DAE40000F6790D /* MonocarTestTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonocarTestTaskTests.swift; sourceTree = "<group>"; };
+		CEA7CF7C24DAE40000F6790D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA7CF8124DAE40000F6790D /* MonocarTestTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonocarTestTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7CF8524DAE40000F6790D /* MonocarTestTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonocarTestTaskUITests.swift; sourceTree = "<group>"; };
+		CEA7CF8724DAE40000F6790D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA7CF9924DAE94600F6790D /* RequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProvider.swift; sourceTree = "<group>"; };
+		CEA7CF9C24DAEA4A00F6790D /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		CEA7CF9E24DAEAB400F6790D /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CEA7CFA024DAEAEA00F6790D /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		CEA7CFA224DAEC4E00F6790D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		CEA7CFA424DAEDE900F6790D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		F65BAE3260EBE12A3C0FAF6A /* Pods_MonocarTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonocarTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA7CF5D24DAE3FE00F6790D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3D7AAED403CF12F804CBAC /* Pods_MonocarTestTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7CF7324DAE40000F6790D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7CF7E24DAE40000F6790D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45BE111A4BD7FCB6C9139209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65BAE3260EBE12A3C0FAF6A /* Pods_MonocarTestTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE26901424DB256900078BD3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE26901524DB259500078BD3 /* DriverCollectionViewCell.swift */,
+				CE26901624DB259500078BD3 /* DriverCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CEA7CF5724DAE3FE00F6790D = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF6224DAE3FE00F6790D /* MonocarTestTask */,
+				CEA7CF7924DAE40000F6790D /* MonocarTestTaskTests */,
+				CEA7CF8424DAE40000F6790D /* MonocarTestTaskUITests */,
+				CEA7CF6124DAE3FE00F6790D /* Products */,
+				F2200DF5F3272809FE87D81C /* Pods */,
+				45BE111A4BD7FCB6C9139209 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA7CF6124DAE3FE00F6790D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF6024DAE3FE00F6790D /* MonocarTestTask.app */,
+				CEA7CF7624DAE40000F6790D /* MonocarTestTaskTests.xctest */,
+				CEA7CF8124DAE40000F6790D /* MonocarTestTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA7CF6224DAE3FE00F6790D /* MonocarTestTask */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF9B24DAEA3400F6790D /* Extensions */,
+				CEA7CF9824DAE8D200F6790D /* Models */,
+				CEA7CF9324DAE89200F6790D /* API */,
+				CEA7CF9724DAE8CA00F6790D /* Managers */,
+				CEA7CF9624DAE8BA00F6790D /* Controller */,
+				CEA7CF9524DAE8B400F6790D /* View */,
+				CEA7CF9424DAE8A800F6790D /* Source */,
+			);
+			path = MonocarTestTask;
+			sourceTree = "<group>";
+		};
+		CEA7CF7924DAE40000F6790D /* MonocarTestTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF7A24DAE40000F6790D /* MonocarTestTaskTests.swift */,
+				CEA7CF7C24DAE40000F6790D /* Info.plist */,
+			);
+			path = MonocarTestTaskTests;
+			sourceTree = "<group>";
+		};
+		CEA7CF8424DAE40000F6790D /* MonocarTestTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF8524DAE40000F6790D /* MonocarTestTaskUITests.swift */,
+				CEA7CF8724DAE40000F6790D /* Info.plist */,
+			);
+			path = MonocarTestTaskUITests;
+			sourceTree = "<group>";
+		};
+		CEA7CF9324DAE89200F6790D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF9924DAE94600F6790D /* RequestProvider.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CEA7CF9424DAE8A800F6790D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF6324DAE3FE00F6790D /* AppDelegate.swift */,
+				CEA7CF6524DAE3FE00F6790D /* SceneDelegate.swift */,
+				CEA7CF6C24DAE40000F6790D /* Assets.xcassets */,
+				CEA7CF7124DAE40000F6790D /* Info.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CEA7CF9524DAE8B400F6790D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF6924DAE3FE00F6790D /* Map.storyboard */,
+				CEA7CF6E24DAE40000F6790D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA7CF9624DAE8BA00F6790D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE26901424DB256900078BD3 /* Cells */,
+				CEA7CF6724DAE3FE00F6790D /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEA7CF9724DAE8CA00F6790D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CFA024DAEAEA00F6790D /* RequestManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CEA7CF9824DAE8D200F6790D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CFA224DAEC4E00F6790D /* AppError.swift */,
+				CEA7CFA424DAEDE900F6790D /* Route.swift */,
+				CE26901224DB0C8900078BD3 /* GoogleRoute.swift */,
+				CE26901924DC38EA00078BD3 /* MapViewInfo.swift */,
+				CE26901B24DC49C200078BD3 /* Constans.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEA7CF9B24DAEA3400F6790D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7CF9C24DAEA4A00F6790D /* Codable.swift */,
+				CEA7CF9E24DAEAB400F6790D /* DIContainer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2200DF5F3272809FE87D81C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BF98A6258E348305D2DB879 /* Pods-MonocarTestTask.debug.xcconfig */,
+				ADA5A8416439D8C55127A86E /* Pods-MonocarTestTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA7CF5F24DAE3FE00F6790D /* MonocarTestTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA7CF8A24DAE40000F6790D /* Build configuration list for PBXNativeTarget "MonocarTestTask" */;
+			buildPhases = (
+				9CEE06D909A901DB690A77CE /* [CP] Check Pods Manifest.lock */,
+				CEA7CF5C24DAE3FE00F6790D /* Sources */,
+				CEA7CF5D24DAE3FE00F6790D /* Frameworks */,
+				CEA7CF5E24DAE3FE00F6790D /* Resources */,
+				C4FCE3F24DC160DBD6FCD10C /* [CP] Embed Pods Frameworks */,
+				2F2E7CC1662440B6238AD300 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonocarTestTask;
+			productName = MonocarTestTask;
+			productReference = CEA7CF6024DAE3FE00F6790D /* MonocarTestTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA7CF7524DAE40000F6790D /* MonocarTestTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA7CF8D24DAE40000F6790D /* Build configuration list for PBXNativeTarget "MonocarTestTaskTests" */;
+			buildPhases = (
+				CEA7CF7224DAE40000F6790D /* Sources */,
+				CEA7CF7324DAE40000F6790D /* Frameworks */,
+				CEA7CF7424DAE40000F6790D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA7CF7824DAE40000F6790D /* PBXTargetDependency */,
+			);
+			name = MonocarTestTaskTests;
+			productName = MonocarTestTaskTests;
+			productReference = CEA7CF7624DAE40000F6790D /* MonocarTestTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEA7CF8024DAE40000F6790D /* MonocarTestTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA7CF9024DAE40000F6790D /* Build configuration list for PBXNativeTarget "MonocarTestTaskUITests" */;
+			buildPhases = (
+				CEA7CF7D24DAE40000F6790D /* Sources */,
+				CEA7CF7E24DAE40000F6790D /* Frameworks */,
+				CEA7CF7F24DAE40000F6790D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA7CF8324DAE40000F6790D /* PBXTargetDependency */,
+			);
+			name = MonocarTestTaskUITests;
+			productName = MonocarTestTaskUITests;
+			productReference = CEA7CF8124DAE40000F6790D /* MonocarTestTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA7CF5824DAE3FE00F6790D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = ValeriiaTarasenko;
+				TargetAttributes = {
+					CEA7CF5F24DAE3FE00F6790D = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					CEA7CF7524DAE40000F6790D = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CEA7CF5F24DAE3FE00F6790D;
+					};
+					CEA7CF8024DAE40000F6790D = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CEA7CF5F24DAE3FE00F6790D;
+					};
+				};
+			};
+			buildConfigurationList = CEA7CF5B24DAE3FE00F6790D /* Build configuration list for PBXProject "MonocarTestTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA7CF5724DAE3FE00F6790D;
+			productRefGroup = CEA7CF6124DAE3FE00F6790D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA7CF5F24DAE3FE00F6790D /* MonocarTestTask */,
+				CEA7CF7524DAE40000F6790D /* MonocarTestTaskTests */,
+				CEA7CF8024DAE40000F6790D /* MonocarTestTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA7CF5E24DAE3FE00F6790D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE26901824DB259500078BD3 /* DriverCollectionViewCell.xib in Resources */,
+				CEA7CF7024DAE40000F6790D /* LaunchScreen.storyboard in Resources */,
+				CEA7CF6D24DAE40000F6790D /* Assets.xcassets in Resources */,
+				CEA7CF6B24DAE3FE00F6790D /* Map.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7CF7424DAE40000F6790D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7CF7F24DAE40000F6790D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F2E7CC1662440B6238AD300 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonocarTestTask/Pods-MonocarTestTask-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonocarTestTask/Pods-MonocarTestTask-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MonocarTestTask/Pods-MonocarTestTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CEE06D909A901DB690A77CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonocarTestTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4FCE3F24DC160DBD6FCD10C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonocarTestTask/Pods-MonocarTestTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonocarTestTask/Pods-MonocarTestTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MonocarTestTask/Pods-MonocarTestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA7CF5C24DAE3FE00F6790D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA7CFA524DAEDE900F6790D /* Route.swift in Sources */,
+				CEA7CF9A24DAE94600F6790D /* RequestProvider.swift in Sources */,
+				CE26901324DB0C8900078BD3 /* GoogleRoute.swift in Sources */,
+				CEA7CF6824DAE3FE00F6790D /* MapViewController.swift in Sources */,
+				CEA7CFA124DAEAEA00F6790D /* RequestManager.swift in Sources */,
+				CE26901724DB259500078BD3 /* DriverCollectionViewCell.swift in Sources */,
+				CE26901C24DC49C200078BD3 /* Constans.swift in Sources */,
+				CEA7CF6424DAE3FE00F6790D /* AppDelegate.swift in Sources */,
+				CEA7CFA324DAEC4E00F6790D /* AppError.swift in Sources */,
+				CEA7CF9D24DAEA4A00F6790D /* Codable.swift in Sources */,
+				CE26901A24DC38EA00078BD3 /* MapViewInfo.swift in Sources */,
+				CEA7CF9F24DAEAB400F6790D /* DIContainer.swift in Sources */,
+				CEA7CF6624DAE3FE00F6790D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7CF7224DAE40000F6790D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA7CF7B24DAE40000F6790D /* MonocarTestTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7CF7D24DAE40000F6790D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA7CF8624DAE40000F6790D /* MonocarTestTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA7CF7824DAE40000F6790D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA7CF5F24DAE3FE00F6790D /* MonocarTestTask */;
+			targetProxy = CEA7CF7724DAE40000F6790D /* PBXContainerItemProxy */;
+		};
+		CEA7CF8324DAE40000F6790D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA7CF5F24DAE3FE00F6790D /* MonocarTestTask */;
+			targetProxy = CEA7CF8224DAE40000F6790D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEA7CF6924DAE3FE00F6790D /* Map.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA7CF6A24DAE3FE00F6790D /* Base */,
+			);
+			name = Map.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA7CF6E24DAE40000F6790D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA7CF6F24DAE40000F6790D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA7CF8824DAE40000F6790D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEA7CF8924DAE40000F6790D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA7CF8B24DAE40000F6790D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF98A6258E348305D2DB879 /* Pods-MonocarTestTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/MonocarTestTask/Source/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtarasenko.MonocarTestTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEA7CF8C24DAE40000F6790D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA5A8416439D8C55127A86E /* Pods-MonocarTestTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/MonocarTestTask/Source/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtarasenko.MonocarTestTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEA7CF8E24DAE40000F6790D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MonocarTestTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtarasenko.MonocarTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonocarTestTask.app/MonocarTestTask";
+			};
+			name = Debug;
+		};
+		CEA7CF8F24DAE40000F6790D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MonocarTestTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtarasenko.MonocarTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonocarTestTask.app/MonocarTestTask";
+			};
+			name = Release;
+		};
+		CEA7CF9124DAE40000F6790D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MonocarTestTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtarasenko.MonocarTestTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MonocarTestTask;
+			};
+			name = Debug;
+		};
+		CEA7CF9224DAE40000F6790D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MonocarTestTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtarasenko.MonocarTestTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MonocarTestTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA7CF5B24DAE3FE00F6790D /* Build configuration list for PBXProject "MonocarTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7CF8824DAE40000F6790D /* Debug */,
+				CEA7CF8924DAE40000F6790D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA7CF8A24DAE40000F6790D /* Build configuration list for PBXNativeTarget "MonocarTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7CF8B24DAE40000F6790D /* Debug */,
+				CEA7CF8C24DAE40000F6790D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA7CF8D24DAE40000F6790D /* Build configuration list for PBXNativeTarget "MonocarTestTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7CF8E24DAE40000F6790D /* Debug */,
+				CEA7CF8F24DAE40000F6790D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA7CF9024DAE40000F6790D /* Build configuration list for PBXNativeTarget "MonocarTestTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7CF9124DAE40000F6790D /* Debug */,
+				CEA7CF9224DAE40000F6790D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA7CF5824DAE3FE00F6790D /* Project object */;
+}
