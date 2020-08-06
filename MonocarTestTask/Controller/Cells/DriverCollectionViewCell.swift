@@ -9,14 +9,13 @@
 import UIKit
 
 class DriverCollectionViewCell: UICollectionViewCell {
-
-    @IBOutlet weak var driverImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var rateLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var seatsLabel: UILabel!
+    @IBOutlet private weak var driverImageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var rateLabel: UILabel!
+    @IBOutlet private weak var timeLabel: UILabel!
+    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet private weak var seatsLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,14 +24,12 @@ class DriverCollectionViewCell: UICollectionViewCell {
     }
     
     func setup(with driver: Driver) {
-        guard let url = URL(string: driver.picture_url)else {
-            return }
+        guard let url = URL(string: driver.pictureUrl) else { return }
         DispatchQueue.global(qos: .userInitiated).async {
             let contenst = try? Data(contentsOf: url)
-            DispatchQueue.main.async {
-                if let imageData = contenst {
-                    self.driverImageView.image = UIImage(data: imageData)
-                }
+            DispatchQueue.main.async { [weak self] in
+                guard let imageData = contenst else { return }
+                self?.driverImageView.image = UIImage(data: imageData)
             }
         }
         nameLabel.text = driver.name
@@ -40,6 +37,6 @@ class DriverCollectionViewCell: UICollectionViewCell {
         timeLabel.text = driver.dateFromStart
         priceLabel.text = "\(driver.amount) ₴"
         dateLabel.text = driver.timeFromStart
-        seatsLabel.text = "\(driver.seats_count)"
+        seatsLabel.text = "\(driver.seatsCount)"
     }
 }

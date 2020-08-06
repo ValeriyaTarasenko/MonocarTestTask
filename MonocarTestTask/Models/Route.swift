@@ -10,17 +10,43 @@ import Foundation
 import GoogleMaps
 
 struct Route: Codable {
-    let payment_type: Int
+    let paymentType: Int
     let amount: Int
-    
-    let dt_interval: Int
+    let dtInterval: Int
     let id: String
-    let results_count: Int
-    let cost_per_seat: Int
+    let resultsCount: Int
+    let costPerSeat: Int
     let radius: Int
     let end: Location
     let start: Location
     let results: [String: Driver]
+    
+    private enum CodingKeys : String, CodingKey {
+        case paymentType = "payment_type"
+        case amount = "amount"
+        case dtInterval = "dt_interval"
+        case id = "id"
+        case resultsCount = "results_count"
+        case costPerSeat = "cost_per_seat"
+        case radius = "radius"
+        case end = "end"
+        case start = "start"
+        case results = "results"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.paymentType = try container.decode(Int.self, forKey: .paymentType)
+        self.amount = try container.decode(Int.self, forKey: .amount)
+        self.dtInterval = try container.decode(Int.self, forKey: .dtInterval)
+        self.id = try container.decode(String.self, forKey: .id)
+        self.resultsCount = try container.decode(Int.self, forKey: .resultsCount)
+        self.costPerSeat = try container.decode(Int.self, forKey: .costPerSeat)
+        self.radius = try container.decode(Int.self, forKey: .radius)
+        self.end = try container.decode(Location.self, forKey: .end)
+        self.start = try container.decode(Location.self, forKey: .start)
+        self.results = try container.decode([String: Driver].self, forKey: .results)
+    }
 }
 
 struct Location: Codable {
@@ -36,35 +62,5 @@ public struct Coordinate: Codable {
     
     var CLLocation: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-    }
-}
-
-struct Driver: Codable {
-    let seats_count: Int
-    let user_uid: String
-    let rating: Double
-    let dt_start: Int
-    let rides_count: Double
-    let picture_url: String
-    let cost_per_seat: Int
-    let name: String
-    let amount: Int
-    let route_start: String
-    let route_end: String
-    
-    var dateFromStart:  String {
-        let date = Date(timeIntervalSince1970: TimeInterval(dt_start))
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd.MM.yy"
-        
-        return dateFormatter.string(from: date)
-    }
-    
-    var timeFromStart:  String {
-        let date = Date(timeIntervalSince1970: TimeInterval(dt_start))
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm"
-        
-        return dateFormatter.string(from: date)
     }
 }

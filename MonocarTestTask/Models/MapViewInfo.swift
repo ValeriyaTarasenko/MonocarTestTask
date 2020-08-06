@@ -10,9 +10,9 @@ import Foundation
 import GoogleMaps
 
 class MapViewInfo: GMSMapView, GMSMapViewDelegate {
-    var startLocation: Coordinate?
-    var endLocation: Coordinate?
-    var points: String?
+    private var startLocation: Coordinate?
+    private var endLocation: Coordinate?
+    private var points: String?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -27,7 +27,7 @@ class MapViewInfo: GMSMapView, GMSMapViewDelegate {
         createPolylines(driver: driver)
     }
     
-     func createPolylines(driver: Driver) {
+    func createPolylines(driver: Driver) {
         guard let points = points else { return }
         clear()
         createMarkers()
@@ -62,8 +62,8 @@ class MapViewInfo: GMSMapView, GMSMapViewDelegate {
     }
     
     private func createDottPolyline(driver: Driver) {
-        let route_start = driver.route_start
-        let route_end = driver.route_end
+        let route_start = driver.routeStart
+        let route_end = driver.routeEnd
         let startPolyline = GMSPolyline(path: GMSPath(fromEncodedPath: route_start))
         let endPolyline = GMSPolyline(path: GMSPath(fromEncodedPath: route_end))
         updateLine(line: startPolyline, color: #colorLiteral(red: 0, green: 0.8, blue: 0.2, alpha: 1))
@@ -71,13 +71,14 @@ class MapViewInfo: GMSMapView, GMSMapViewDelegate {
     }
     
     private func updateLine(line: GMSPolyline, color: UIColor) {
+        guard let path = line.path else { return }
         let styles: [GMSStrokeStyle] = [.solidColor(color), .solidColor(.clear)]
         let scale = 1.0 / projection.points(forMeters: 1, at: camera.target)
         let solidLine = NSNumber(value: 15.0 * Float(scale))
         let gap = NSNumber(value: 15.0 * Float(scale))
         line.geodesic = true
         line.strokeWidth = 2.0
-        line.spans = GMSStyleSpans(line.path!, styles, [solidLine, gap], GMSLengthKind.rhumb)
+        line.spans = GMSStyleSpans(path, styles, [solidLine, gap], .rhumb)
         line.map = self
     }
 }

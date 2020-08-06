@@ -13,6 +13,7 @@
 		CE26901824DB259500078BD3 /* DriverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE26901624DB259500078BD3 /* DriverCollectionViewCell.xib */; };
 		CE26901A24DC38EA00078BD3 /* MapViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26901924DC38EA00078BD3 /* MapViewInfo.swift */; };
 		CE26901C24DC49C200078BD3 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26901B24DC49C200078BD3 /* Constans.swift */; };
+		CE26901E24DC75A800078BD3 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26901D24DC75A800078BD3 /* Driver.swift */; };
 		CEA7CF6424DAE3FE00F6790D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF6324DAE3FE00F6790D /* AppDelegate.swift */; };
 		CEA7CF6624DAE3FE00F6790D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF6524DAE3FE00F6790D /* SceneDelegate.swift */; };
 		CEA7CF6824DAE3FE00F6790D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7CF6724DAE3FE00F6790D /* MapViewController.swift */; };
@@ -54,6 +55,7 @@
 		CE26901624DB259500078BD3 /* DriverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE26901924DC38EA00078BD3 /* MapViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewInfo.swift; sourceTree = "<group>"; };
 		CE26901B24DC49C200078BD3 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		CE26901D24DC75A800078BD3 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		CEA7CF6024DAE3FE00F6790D /* MonocarTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonocarTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA7CF6324DAE3FE00F6790D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA7CF6524DAE3FE00F6790D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				CE26901224DB0C8900078BD3 /* GoogleRoute.swift */,
 				CE26901924DC38EA00078BD3 /* MapViewInfo.swift */,
 				CE26901B24DC49C200078BD3 /* Constans.swift */,
+				CE26901D24DC75A800078BD3 /* Driver.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA7CFA524DAEDE900F6790D /* Route.swift in Sources */,
+				CE26901E24DC75A800078BD3 /* Driver.swift in Sources */,
 				CEA7CF9A24DAE94600F6790D /* RequestProvider.swift in Sources */,
 				CE26901324DB0C8900078BD3 /* GoogleRoute.swift in Sources */,
 				CEA7CF6824DAE3FE00F6790D /* MapViewController.swift in Sources */,
