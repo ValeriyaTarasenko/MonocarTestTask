@@ -17,6 +17,12 @@ class DriverCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var seatsLabel: UILabel!
     
+    var driverImageString: String? {
+        didSet {
+            driverImageView.image = nil
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         driverImageView.layer.cornerRadius = driverImageView.bounds.size.width / 2
@@ -24,11 +30,13 @@ class DriverCollectionViewCell: UICollectionViewCell {
     }
     
     func setup(with driver: Driver) {
-        guard let url = URL(string: driver.pictureUrl) else { return }
+        driverImageString = driver.pictureUrl
+        guard let driverImage = driverImageString, let url = URL(string: driverImage) else { return }
         DispatchQueue.global(qos: .userInitiated).async {
             let contenst = try? Data(contentsOf: url)
             DispatchQueue.main.async { [weak self] in
-                guard let imageData = contenst else { return }
+                guard driverImage == self?.driverImageString,
+                    let imageData = contenst else { return }
                 self?.driverImageView.image = UIImage(data: imageData)
             }
         }
